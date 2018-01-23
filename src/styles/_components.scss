@@ -1,0 +1,22 @@
+.flex-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+// landing page stuff
+.landing-button-background {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius:  9px;
+}
+.landing-background-img{
+    background-image: url(../assets/login-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}

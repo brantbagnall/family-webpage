@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import {doTest} from '../ducks/reducer';
+import {} from '../ducks/reducer';
 
 class Landing extends Component {
 
     componentDidMount(){
-        this.props.doTest();
+
     }
 
 
 
     render() {
         return (
-        <div>
-            {this.props.test}
+        <div className='landing-background-img flex-centered' >
+            <div className='landing-button-background flex-centered flex-column' >
+            <h1>
+                The Underhills
+            </h1>
+                <button  >
+                    Login
+                </button>
+            </div>
         </div>
         )
     }
@@ -23,4 +30,4 @@ function mapStateToProps(state) {
     return state
 }
 
-export default connect(mapStateToProps, {doTest}) (Landing)
+export default connect(mapStateToProps, {}) (Landing)
