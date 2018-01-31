@@ -8,8 +8,6 @@ class Landing extends Component {
 
     }
 
-
-
     render() {
         return (
         <div className='landing-background-img flex-centered' >
@@ -17,9 +15,11 @@ class Landing extends Component {
             <h1>
                 The Underhills
             </h1>
-                <button  >
-                    Login
-                </button>
+                <a href='/api/auth0/auth' >
+                    <button  >
+                        Login
+                    </button>
+                </a>
             </div>
         </div>
         )

@@ -32,6 +32,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3005",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:3005",
+      "ws": true
+    }
+  },
   "main": "./server/index.js"
 }

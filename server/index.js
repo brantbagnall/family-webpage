@@ -25,6 +25,7 @@ app.use(passport.initialize());
 
 massive(process.env.MASSIVE_STRING).then((db)=>{
     app.set('db', db);
+    console.log('massive connected');
 })
 
 passport.use(new Auth0Strategy({
@@ -54,11 +55,11 @@ passport.deserializeUser(function(id, done){
 })
 
 
-app.get('/auth0/auth', passport.authenticate('auth0'));
+app.get('/api/auth0/auth', passport.authenticate('auth0'));
 
-app.get('/auth0/callback', passport.authenticate('auth0', {
+app.get('/api/auth0/callback', passport.authenticate('auth0', {
     successRedirect: process.env.AUTH_REDIRECT,
-    failureRedirect: '/auth0'
+    failureRedirect: process.env.AUTH_FAIL
 }))
 
 
