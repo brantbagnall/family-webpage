@@ -10,8 +10,8 @@ class Landing extends Component {
 
     render() {
         return (
-        <div className='landing-background-img flex-centered' >
-            <div className='landing-button-background flex-centered flex-column' >
+        <div className='landing-background-img landing-flex-center-column' >
+            <div className='landing-button-background landing-flex-center-column' >
             <h1>
                 The Underhills
             </h1>

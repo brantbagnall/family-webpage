@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.flex-centered {
+.flex-centered-colum {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -65,3 +65,47 @@ table {
   background-position: center center;
   width: 100vw;
   height: 100vh; }
+
+.landing-flex-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.pageheader-main {
+  position: sticky;
+  width: 100vw;
+  height: 50px;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+
+.pageheader-side {
+  width: 33vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: 0; }
+
+.pageheader-center {
+  width: 34vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: 0; }
+
+.blog-trifecta {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  flex-direction: row; }
+
+.blog-side {
+  width: 30vw;
+  background: red; }
+
+.blog-center {
+  width: 40vw;
+  background: green; }

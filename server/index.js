@@ -55,6 +55,11 @@ passport.deserializeUser(function(id, done){
 })
 
 
+app.get("/api/auth/logout", (req, res) => {
+    req.logOut(); //built in method that destroys the session
+    res.redirect('/');
+});
+
 app.get('/api/auth0/auth', passport.authenticate('auth0'));
 
 app.get('/api/auth0/callback', passport.authenticate('auth0', {

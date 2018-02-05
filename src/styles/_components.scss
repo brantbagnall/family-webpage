@@ -1,5 +1,5 @@
-// all pages
-.flex-centered{
+//generic stuff for all pages to use
+.flex-centered-colum{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,4 +20,35 @@
     background-position: center center;
     width: 100vw;
     height: 100vh;
+}
+.landing-flex-center-column{
+    @include flexing(center, center, column)
+}
+// pageheader
+.pageheader-main{
+    position: sticky;
+    width: 100vw;
+    height: $pageheader-height;
+    background: blue;
+    @include flexing(center, center, row)
+}
+.pageheader-side{
+    width: 33vw;
+    @include flexing(center, center, 0)
+}
+.pageheader-center{
+    width: 34vw;
+    @include flexing(center, center, 0)
+}
+//blog
+.blog-trifecta{
+@include flexing(0,0,row)
+}
+.blog-side{
+    width: 30vw;
+    background: red;
+}
+.blog-center{
+    width: 40vw;
+    background: green;
 }
